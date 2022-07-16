@@ -1,0 +1,65 @@
+.contactItemContainer {
+  background-color: #7f7f7f75;
+  height: 60px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.contactData {
+  width: 60%;
+}
+
+.contactData p {
+  margin: 0;
+  font-weight: 600;
+  color: #efefef;
+  transition: all 0.2s ease-in-out;
+}
+
+.contactData p:hover {
+  color: #4c7fae;
+  cursor: pointer;
+}
+
+.contactData span {
+  font-weight: 500;
+  color: #4c7fae;
+}
+
+.contactActionButtons {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactActionButtons button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactActionButtons button:hover {
+  cursor: pointer;
+}
+
+.comunicationWay {
+  background-color: #4c7fae;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+}
+.hideComunicationWay {
+  display: none;
+}

@@ -1,0 +1,16 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+}
+
+.input_search {
+  height: 2.15em;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid white;
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    justify-content: center;
+  }
+}

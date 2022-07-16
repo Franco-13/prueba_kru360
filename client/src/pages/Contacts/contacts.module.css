@@ -1,0 +1,73 @@
+.container {
+  padding: 20px;
+  height: 93vh;
+}
+
+.title {
+  padding-top: 10px;
+}
+
+.createButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn_action {
+  border: none;
+  border-radius: 2px;
+  margin: 0 3px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn_action:hover {
+  background-color: rgb(116, 123, 120);
+}
+
+.contactList {
+  background-color: #212529;
+  padding: 5px;
+  border-radius: 10px;
+  width: 287px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.contactList::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.contactList::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.contactList::-webkit-scrollbar-button:increment,
+.contactList::-webkit-scrollbar-button {
+  display: none;
+}
+
+.contactList::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.contactList::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.contactList::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .createButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+}

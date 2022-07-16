@@ -1,0 +1,134 @@
+.container {
+  padding: 20px;
+  height: 93vh;
+}
+
+.title {
+  padding-top: 10px;
+}
+
+.contactList {
+  background-color: #212529;
+  padding: 5px;
+  border-radius: 10px;
+  width: 287px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  max-height: 70vh;
+}
+
+.detailContact,
+.commentsSection,
+.taskSection {
+  background-color: #7f7f7f75;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.detailContact summary,
+.commentsSection summary {
+  cursor: pointer;
+}
+
+.contactData {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.contactData p {
+  font-size: 1.15em;
+  font-weight: 600;
+  color: #4c7fae;
+  margin: 2px;
+}
+
+.contactData span {
+  font-style: oblique;
+  margin: 2px 0;
+  text-align: end;
+  font-size: 0.95em;
+}
+
+.commentContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.commentContainer textarea {
+  max-width: 90%;
+  min-width: 90%;
+  border-radius: 10px;
+  min-height: 40px;
+  padding: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.commentsList,
+.tasksList {
+  display: "flex";
+  flex-direction: "column";
+}
+
+.bubbleComment {
+  background-color: #55728b;
+  margin: 5px;
+  min-height: 40px;
+  border-radius: 10px;
+}
+
+.bubbleComment p {
+  font-size: 14px;
+  text-align: end;
+  margin: 2px;
+  margin-right: 10px;
+}
+
+.bubbleComment span {
+  font-size: 0.75em;
+  margin-left: 5px;
+}
+
+.contactActionButtons button {
+  background-color: transparent;
+  border: none;
+  margin: 0 4px;
+}
+
+.contactActionButtons button:hover {
+  cursor: pointer;
+}
+
+.contactList::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.contactList::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.contactList::-webkit-scrollbar-button:increment,
+.contactList::-webkit-scrollbar-button {
+  display: none;
+}
+
+.contactList::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.contactList::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.contactList::-webkit-scrollbar-track {
+  border-radius: 10px;
+}

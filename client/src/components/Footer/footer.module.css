@@ -1,0 +1,35 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  background-color: #212529;
+  width: 100vw;
+  height: 3em;
+  z-index: 2;
+}
+
+.buttonsContainer {
+  max-width: 768px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #516c7f;
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+.buttonsContainer a {
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  font-size: 1.15em;
+  color: aliceblue;
+}
+
+.buttonsContainer a.active {
+  border-top: 8px solid #8db42f;
+}
+.buttonsContainer a.inactive {
+  border-top: 8px solid transparent;
+}
