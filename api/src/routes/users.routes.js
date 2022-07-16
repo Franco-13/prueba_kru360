@@ -6,7 +6,7 @@ const router = Router();
 router.post("/", (req, res) => {
   const { uid, email } = req.body;
 
-  const is_admin = email.includes("admin");
+  const is_admin = email.includes("@admin.com");
 
   const newUser = new User({
     id_user: uid,

@@ -2,7 +2,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { setUserInfo } from "../../redux/reducer/userSlice";
+import { setToken, setUserInfo } from "../../redux/reducer/userSlice";
 
 import styles from "./navbar.module.css";
 
@@ -17,6 +17,7 @@ function Navbar() {
     signOut(auth)
       .then(() => {
         dispatch(setUserInfo(null));
+        dispatch(setToken(""));
         navigate("/");
       })
       .catch((err) => {
